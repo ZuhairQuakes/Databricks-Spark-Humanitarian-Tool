@@ -1,12 +1,12 @@
-# Databricks Humanitarian Intelligence Platform with Spark Pipelines
+# Databricks Humanitarian Intelligence Platform (DHIP)
 
-H2C2 (Humanitarian Health Command Center) is a full-stack intelligence platform that fuses UN Humanitarian Needs Overview (HNO) and Humanitarian Response Plan (HRP) datasets into a single analytical layer — surfacing the funding mismatches, targeting gaps, and future neglect risks that decision-makers miss.
+DHIP is a full-stack intelligence application that consolidates fragmented UN Humanitarian Needs Overview (HNO) and Humanitarian Response Plan (HRP) data into a unified analytics environment. By doing so, it illuminates critical funding disparities, resource targeting shortfalls, and future neglect risks that typically evade global decision-makers.
 
 ---
 
 ## Overview
 
-Every year, billions of dollars in humanitarian aid are allocated without a clear picture of where the need is greatest. Some regions receive generous funding while others — equally devastated — are barely touched. H2C2 closes that gap through four integrated tools:
+Annually, billions of dollars in global humanitarian aid are distributed without clear visibility into where interventions are most urgently needed. As a result, certain crisis zones receive substantial financial backing, while other equally devastated regions remain severely underfunded. This platform bridges the allocation gap by utilising four seamlessly integrated tools:
 
 | Tool | Purpose |
 |---|---|
@@ -23,16 +23,6 @@ Every year, billions of dollars in humanitarian aid are allocated without a clea
 
 - Python 3.9+
 - Databricks account (for Genie integration in production)
-
-### Installation
-
-```bash
-git clone https://github.com/Nikil456/Insight-for-Impact.git
-cd Insight-for-Impact
-python -m venv venv
-source venv/bin/activate      # macOS/Linux
-pip install -r requirements.txt
-```
 
 ### Environment Variables (optional — required for Genie)
 
@@ -57,7 +47,7 @@ Opens at `http://localhost:8501`.
 ## Project Structure
 
 ```
-Insight-for-Impact/
+Databricks-Spark-Humanitarian-Tool/
 ├── src/
 │   ├── main.py                   # App entry point, navigation, home & dashboard pages
 │   ├── analytics_page.py         # Crisis Funding Intelligence page
@@ -132,11 +122,9 @@ RMSE: ~429,852 people (In Need) · ~$773M USD (Requirements)
 
 ## Key Findings
 
-**Sudan** holds the highest Mismatch Score (0.59) — 64% of its 47.5M population is in need, with only ~$1,342 budgeted per person. **Afghanistan** follows at 0.53 with ~$1,174 per person in need, the lowest Budget per PIN among Critical-tier countries.
-
-**Colombia** is the most undertargeted country — response plans reach only 22% of the 9M people in need, leaving 7.1M without a targeting commitment.
-
-**Somalia** receives ~$4,287 per person in need despite Critical severity status — more than any other country — while **Guatemala** (Low severity) receives just ~$335 per PIN, illustrating that funding decisions are partly driven by geopolitical visibility rather than need alone.
+- Countries facing severe crises like Sudan and Afghanistan experience the highest mismatch between their population's needs and the budget allocated to them, receiving exceptionally low funding per person in need.
+- Colombia suffers from the lowest targeting commitment, with response plans failing to reach nearly 80% of the 9 million people requiring aid.
+- Funding decisions are often driven by a country's geopolitical visibility rather than the actual severity of its crisis. This is evidenced by Somalia receiving significantly more funding per person than any other critical-tier country, while low-severity nations like Guatemala receive minimal financial support.
 
 ---
 
