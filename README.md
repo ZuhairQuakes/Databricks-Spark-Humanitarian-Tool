@@ -1,6 +1,4 @@
-# H2C2 — Insight for Impact
-
-**Hacklytics 2026 · Databricks × United Nations**
+# Databricks Humanitarian Intelligence Platform with Spark Pipelines
 
 H2C2 (Humanitarian Health Command Center) is a full-stack intelligence platform that fuses UN Humanitarian Needs Overview (HNO) and Humanitarian Response Plan (HRP) datasets into a single analytical layer — surfacing the funding mismatches, targeting gaps, and future neglect risks that decision-makers miss.
 
@@ -155,8 +153,6 @@ RMSE: ~429,852 people (In Need) · ~$773M USD (Requirements)
 
 ## License
 
-MIT License — Built for Hacklytics 2026 · Georgia Tech
+MIT License — Built for Portfolio 2026 (Inspired by E.Z. Gonzalez)
 
 ---
-
-*"People need help. It's time to respond where it matters."*
